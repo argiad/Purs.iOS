@@ -15,6 +15,10 @@
 		3800C4112B4D194D00DDF000 /* Purs_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800C4102B4D194D00DDF000 /* Purs_iOSTests.swift */; };
 		3800C41B2B4D194D00DDF000 /* Purs_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800C41A2B4D194D00DDF000 /* Purs_iOSUITests.swift */; };
 		3800C41D2B4D194D00DDF000 /* Purs_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800C41C2B4D194D00DDF000 /* Purs_iOSUITestsLaunchTests.swift */; };
+		3800C42A2B4D198600DDF000 /* LocationItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800C4292B4D198600DDF000 /* LocationItemResponse.swift */; };
+		3800C42C2B4D1A0E00DDF000 /* NetworkActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800C42B2B4D1A0E00DDF000 /* NetworkActor.swift */; };
+		3800C42E2B4E01E900DDF000 /* ScheduleListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800C42D2B4E01E900DDF000 /* ScheduleListItem.swift */; };
+		3800C4302B4E024C00DDF000 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800C42F2B4E024C00DDF000 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		3800C4162B4D194D00DDF000 /* Purs.iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Purs.iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3800C41A2B4D194D00DDF000 /* Purs_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purs_iOSUITests.swift; sourceTree = "<group>"; };
 		3800C41C2B4D194D00DDF000 /* Purs_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purs_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3800C4292B4D198600DDF000 /* LocationItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItemResponse.swift; sourceTree = "<group>"; };
+		3800C42B2B4D1A0E00DDF000 /* NetworkActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActor.swift; sourceTree = "<group>"; };
+		3800C42D2B4E01E900DDF000 /* ScheduleListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListItem.swift; sourceTree = "<group>"; };
+		3800C42F2B4E024C00DDF000 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +107,11 @@
 				3800C3FD2B4D194C00DDF000 /* Purs_iOSApp.swift */,
 				3800C3FF2B4D194C00DDF000 /* ContentView.swift */,
 				3800C4012B4D194C00DDF000 /* Item.swift */,
+				3800C42D2B4E01E900DDF000 /* ScheduleListItem.swift */,
+				3800C42F2B4E024C00DDF000 /* HeaderView.swift */,
 				3800C4032B4D194D00DDF000 /* Assets.xcassets */,
+				3800C4292B4D198600DDF000 /* LocationItemResponse.swift */,
+				3800C42B2B4D1A0E00DDF000 /* NetworkActor.swift */,
 				3800C4052B4D194D00DDF000 /* Preview Content */,
 			);
 			path = Purs.iOS;
@@ -260,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3800C42A2B4D198600DDF000 /* LocationItemResponse.swift in Sources */,
+				3800C42E2B4E01E900DDF000 /* ScheduleListItem.swift in Sources */,
+				3800C42C2B4D1A0E00DDF000 /* NetworkActor.swift in Sources */,
 				3800C4002B4D194C00DDF000 /* ContentView.swift in Sources */,
 				3800C4022B4D194C00DDF000 /* Item.swift in Sources */,
 				3800C3FE2B4D194C00DDF000 /* Purs_iOSApp.swift in Sources */,
+				3800C4302B4E024C00DDF000 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

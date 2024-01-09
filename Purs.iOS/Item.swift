@@ -8,11 +8,16 @@
 import Foundation
 import SwiftData
 
+
+
 @Model
-final class Item {
-    var timestamp: Date
+final class LocationSchedule {
+    var name: String
+    var hours: Dictionary<DayOfWeek,[[Date]]>
     
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+    init(name: String, workingHours: Dictionary<DayOfWeek,[[Date]]>) {
+        self.name = name
+        self.hours = workingHours
     }
 }
+
