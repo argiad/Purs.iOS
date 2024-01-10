@@ -26,8 +26,7 @@ struct ScheduleListItem:View {
                 .frame(maxWidth: .infinity)
             LazyVStack(alignment:.trailing) {
                 ForEach(value, id: \.self ){ timePeriod in
-                    
-                    Text("\(format( timePeriod.first))-\(format( timePeriod.last))")
+                    Text( is24Open(timePeriod) ? "Open 24hrs" : "\(format( timePeriod.first))-\(format( timePeriod.last))")
 //                        .font(Font.custom("Hind Siliguri", size: 16)) // have no time to search and add necessary font's weights
                         .font(Font.custom("Arial", size: 16))
                         .foregroundColor(Color(red: 0.20, green: 0.20, blue: 0.20))
@@ -44,9 +43,18 @@ struct ScheduleListItem:View {
         .frame(maxWidth: .infinity)
         .frame(height: height())
     }
+    
+    private func is24Open(_ period: [Date])-> Bool {
+        if let hours = Calendar.current.dateComponents([.hour], from: period.first!, to: period.last!).hour {
+            return hours == 24
+        }
+     return false
+    }
+    
     private func height() -> CGFloat {
         return CGFloat(value.count) * 24
     }
+    
     private func format(_ date: Date?) -> String {
         let encoderDateFormatter = DateFormatter()
         encoderDateFormatter.dateFormat = "hh:mma"
